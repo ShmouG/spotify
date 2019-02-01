@@ -15,7 +15,7 @@ const cookieParser = require('cookie-parser');
 
 const client_id = '61efe217e5464a24ab7bb5da303663fa'; // Your client id
 const client_secret = '5add70274855420f9341b33ac70aef79'; // Your secret
-const redirect_uri = 'https://shmoug.github.io/spotify/'; // Your redirect uri
+const redirect_uri = 'http://localhost:8888/callback'; // Your redirect uri
 
 /**
  * Generates a random string containing numbers and letters
