@@ -7,15 +7,15 @@
  * https://developer.spotify.com/web-api/authorization-guide/#authorization_code_flow
  */
 
-var express = require('express'); // Express web server framework
-var request = require('request'); // "Request" library
-var cors = require('cors');
-var querystring = require('querystring');
-var cookieParser = require('cookie-parser');
+const express = require('express'); // Express web server framework
+const request = require('request'); // "Request" library
+const cors = require('cors');
+const querystring = require('querystring');
+const cookieParser = require('cookie-parser');
 
-var client_id = 'de86a07d15144adf9e05ef0b04d4952d'; // Your client id
-var client_secret = '6ac231e75c624a089ff0ede940d1cd84'; // Your secret
-var redirect_uri = 'https://shmoug.github.io/spotify/'; // Your redirect uri
+const client_id = '61efe217e5464a24ab7bb5da303663fa'; // Your client id
+const client_secret = '5add70274855420f9341b33ac70aef79'; // Your secret
+const redirect_uri = 'https://shmoug.github.io/spotify/'; // Your redirect uri
 
 /**
  * Generates a random string containing numbers and letters
@@ -34,7 +34,7 @@ var generateRandomString = function(length) {
 
 var stateKey = 'spotify_auth_state';
 
-var app = express();
+const app = express();
 
 app.use(express.static(__dirname + '/public'))
    .use(cors())
